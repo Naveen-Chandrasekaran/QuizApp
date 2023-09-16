@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:background="@color/DarkBlue"
+    tools:context=".MainActivity">
+
+        <!-- Set the title text -->
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:text="Quiz Application "
+            android:gravity="center"
+            android:paddingLeft="15dp"
+            android:textStyle="bold|italic"
+            android:background="@drawable/own_background"
+            android:textColor="@color/DarkBlue"
+            android:textSize="28dp"
+            />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginBottom="90dp"
+        >
+
+
+        <TextView
+            android:layout_width="350dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="30dp"
+            android:paddingRight="90dp"
+            android:paddingLeft="80dp"
+            android:drawableRight="@drawable/ic_menu"
+            android:background="@drawable/choice_background"
+            android:gravity="center"
+            android:text="Main Menu"
+            android:textColor="@color/Rose"
+            android:textSize="25dp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:text="Choose a Category To Start the Quiz: "
+            android:layout_marginBottom="20dp"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:textColor="@color/Rose"
+            android:textStyle="bold|italic"
+            />
+
+        <Button
+            android:id="@+id/gk"
+            android:layout_width="270dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="15dp"
+            android:backgroundTint="@color/Rose"
+            android:drawableRight="@drawable/ic_gk"
+            android:paddingRight="50dp"
+            android:paddingLeft="25dp"
+            android:text="General Knowledge"
+            android:textColor="@color/DarkBlue"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/Technology"
+            android:layout_width="270dp"
+            android:layout_height="60dp"
+            android:textSize="18dp"
+            android:text="Technology"
+            android:textStyle="bold"
+            android:drawableRight="@drawable/baseline_laptop_24"
+            android:paddingRight="80dp"
+            android:paddingLeft="60dp"
+            android:layout_marginBottom="15dp"
+            android:textColor="@color/DarkBlue"
+            android:backgroundTint="@color/Rose"
+            />
+        <Button
+            android:id="@+id/Sports"
+            android:layout_width="270dp"
+            android:layout_height="60dp"
+            android:textSize="18dp"
+            android:text="Sports"
+            android:drawableRight="@drawable/ic_sports"
+            android:paddingRight="100dp"
+            android:paddingLeft="80dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="15dp"
+            android:textColor="@color/DarkBlue"
+            android:backgroundTint="@color/Rose"
+            />
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

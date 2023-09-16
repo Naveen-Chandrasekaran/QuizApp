@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/DarkBlue"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".ResultPage">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+            <TextView
+                android:id="@+id/txt_result"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:text="Result"
+                android:textSize="25dp"
+                android:gravity="center"
+                android:background="@drawable/own_background"
+                android:textColor="@color/DarkBlue"
+                android:textStyle="bold"
+                android:layout_marginBottom="40dp"
+                />
+
+                <ImageView
+                    android:layout_width="400dp"
+                    android:layout_height="100dp"
+                    android:layout_below="@+id/txt_result"
+
+                    android:background="@drawable/front_curve" />
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                app:cardElevation="40dp"
+                android:layout_below="@+id/txt_result"
+                app:cardBackgroundColor="@color/Rose"
+                android:layout_marginTop="60dp"
+
+                app:cardCornerRadius="50dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+
+                    <LinearLayout
+                        android:layout_width="400dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        >
+                        <TextView
+                            android:layout_width="220dp"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginBottom="10dp"
+                            android:paddingLeft="10dp"
+                            android:text="Total Questions"
+                            android:textColor="@color/white"
+                            android:textSize="24dp"
+                            android:textStyle="bold|italic" />
+                        <TextView
+                            android:id="@+id/totalQuestions"
+                            android:layout_width="80dp"
+                            android:layout_height="40dp"
+                            android:gravity="center"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:padding="4dp"
+                            android:text="10"
+                            android:background="@drawable/choice_selected_background"
+                            android:backgroundTint="@color/DarkBlue"
+                            android:textColor="@color/Rose"
+                            android:textSize="22dp"
+                            android:textStyle="bold|italic" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="400dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="8dp"
+
+                        >
+                        <TextView
+                            android:layout_width="220dp"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginBottom="15dp"
+                            android:paddingLeft="10dp"
+                            android:text="Correct"
+                            android:textColor="#4CAF50"
+                            android:textSize="23dp"
+                            android:textStyle="bold|italic" />
+                        <TextView
+                            android:id="@+id/correct"
+                            android:layout_width="80dp"
+                            android:layout_height="40dp"
+                            android:gravity="center"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginBottom="15dp"
+                            android:layout_marginLeft="10dp"
+                            android:padding="4dp"
+                            android:text="20"
+                            android:background="@drawable/choice_selected_background"
+                            android:backgroundTint="@color/white"
+                            android:textColor="#4CAF50"
+                            android:textSize="20dp"
+                            android:textStyle="bold|italic" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="400dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="8dp"
+
+                        >
+
+                        <TextView
+                            android:layout_width="220dp"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginBottom="15dp"
+                            android:paddingLeft="10dp"
+                            android:text="Wrong"
+                            android:textColor="@color/white"
+                            android:textSize="23dp"
+                            android:textStyle="bold|italic" />
+
+                        <TextView
+                            android:id="@+id/wrong"
+                            android:layout_width="80dp"
+                            android:layout_height="40dp"
+                            android:gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginBottom="15dp"
+                            android:background="@drawable/choice_selected_background"
+                            android:backgroundTint="@color/white"
+                            android:padding="4dp"
+                            android:text="20"
+                            android:textColor="@color/Rose"
+                            android:textSize="20dp"
+                            android:textStyle="bold|italic" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="400dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="8dp"
+
+                        >
+                        <TextView
+                            android:layout_width="220dp"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginBottom="15dp"
+                            android:paddingLeft="10dp"
+                            android:text="Skipped"
+                            android:textColor="@color/white"
+                            android:textSize="23dp"
+                            android:textStyle="bold|italic" />
+                        <TextView
+                            android:id="@+id/skippedAns"
+                            android:layout_width="80dp"
+                            android:layout_height="40dp"
+                            android:gravity="center"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginBottom="15dp"
+                            android:layout_marginLeft="10dp"
+                            android:padding="4dp"
+                            android:text="20"
+                            android:background="@drawable/choice_selected_background"
+                            android:backgroundTint="@color/white"
+                            android:textColor="#E91E63"
+                            android:textSize="20dp"
+                            android:textStyle="bold|italic" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="400dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="8dp"
+
+                        >
+                        <TextView
+                            android:layout_width="150dp"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginBottom="15dp"
+                            android:paddingLeft="10dp"
+                            android:gravity="center"
+                            android:text="Score"
+                            android:textColor="@color/white"
+                            android:textSize="23dp"
+                            android:textStyle="bold|italic" />
+                        <TextView
+                            android:id="@+id/score"
+                            android:layout_width="80dp"
+                            android:layout_height="40dp"
+                            android:gravity="center"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginBottom="15dp"
+                            android:layout_marginLeft="10dp"
+                            android:padding="4dp"
+                            android:text="20"
+                            android:background="@drawable/choice_selected_background"
+                            android:backgroundTint="@color/DarkBlue"
+                            android:textColor="@color/Rose"
+                            android:textSize="20dp"
+                            android:textStyle="bold|italic" />
+
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/review"
+                        android:layout_width="400dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:textStyle="bold|italic"
+                        android:gravity="center"
+                        android:layout_marginBottom="15dp"
+                        android:padding="10dp"
+                        android:textColor="@color/white"
+                        />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="80dp"
+                >
+
+                <Button
+                    android:id="@+id/backBtn"
+                    android:layout_width="180dp"
+                    android:layout_height="50dp"
+                    android:text="Back to Main"
+                    android:textSize="17dp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@color/DarkBlue"
+                    android:backgroundTint="@color/Rose"/>
+
+                <Button
+                    android:id="@+id/displayAnsBtn"
+                    android:layout_width="180dp"
+                    android:layout_height="50dp"
+                    android:text="Answers"
+                    android:textSize="17dp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/DarkBlue"
+                    android:backgroundTint="@color/Rose"/>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>
